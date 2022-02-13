@@ -3,8 +3,8 @@ class User < ActiveRecord::Base
 
   validates :first_name, :last_name, presence: true
   validates :email, { presence: true, uniqueness: { case_sensitive: false } }
-  validates :password, presence: true, length: { minimum: 5 }
-  validates :password_confirmation, presence: true, length: { minimum: 5 }
+  validates :password, presence: true, length: { minimum: 1 }
+  validates :password_confirmation, presence: true, length: { minimum: 1 }
 
   before_save do
     self.email.downcase! if self.email
