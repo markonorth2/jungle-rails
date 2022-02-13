@@ -6,29 +6,53 @@ An e-commerce application built using Ruby on Rails and PostgreSQL that allows u
 
 Users can register, sign-in, and sign-out.
 
+![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_1.png)
+
 Has a produts page displaying all the products. 
+
+![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_2.png)
 
 When a product has 0 quantity, a sold out badge will be displayed on the product list page.
 
+![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_3.png?raw=true)
+
 When shopping, users can sort by category. Categories include Apparel, Electronics, and Furniture.
+
+![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_4.png?raw=true)
 
 Users can add products to their cart. 
 
+![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_5.png?raw=true)
+
 From their cart, users can add or remove products. They can also see the unit price and the total price of all their items. 
+
+![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_6.png?raw=true)
 
 Users can pay for their items with a credit card. 
 
+![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_7.png?raw=true)
+
 If the payment is successful, an order confirmation page will be shown thanking the customer for their order. 
+
+![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_8.png?raw=true)
 
 Admin functionality are protected by HTTP authentication. To access admin routes, user must enter HTTP auth login and password. 
 
+![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_9.png?raw=true)
+
 Admin users can see how many products and categories the website has on their dashboard.  
+
+![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_10.png?raw=true)
 
 Admin users can add new products. 
 
-Admin users can add new categories. 
+![""]https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_11.png?raw=true)
 
-Users cannot sign up with an existing e-mail address (uniqueness validation). 
+Admin users can add new categories.
+
+![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_12.png?raw=true)
+
+Users cannot sign up with an existing e-mail address (uniqueness validation).
 
 Passwords are not stored as plain text in the database. Instead, has_secure_password is used in the User model, leveraging the bcrypt gem. 
 
