@@ -4,9 +4,16 @@ An e-commerce application built using Ruby on Rails and PostgreSQL that allows u
 
 ## Features
 
-Users can register, sign-in, and sign-out.
+- Users can register, sign-in, and sign-out.
 
 ![""](https://github.com/markonorth2/jungle-rails/blob/master/screenshots/Screenshot_1.png)
+
+
+
+
+
+
+
 
 Has a produts page displaying all the products. 
 
