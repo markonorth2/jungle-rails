@@ -1,6 +1,18 @@
 # Jungle
 
-A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.
+An e-commerce application built using Rails and PostgreSQL that allows users to choose and buy products. 
+
+## Features
+
+Has a produts page displaying all the products. 
+
+When a product has 0 quantity, a sold out badge will be displayed on the product list page.
+
+Users can add products to their cart. 
+
+From their cart, they can add or remove products. They can also see the unit price and the total price of all their items. 
+
+
 
 ## Additional Steps for Apple M1 Machines
 
@@ -12,17 +24,17 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 ## Setup
 
 1. Run `bundle install` to install dependencies
-2. Create `config/database.yml` by copying `config/database.example.yml`
-3. Create `config/secrets.yml` by copying `config/secrets.example.yml`
-4. Run `bin/rake db:reset` to create, load and seed db
-5. Create .env file based on .env.example
-6. Sign up for a Stripe account
-7. Put Stripe (test) keys into appropriate .env vars
-8. Run `bin/rails s -b 0.0.0.0` to start the server
+2. Run `bin/rake db:reset` to create, load and seed db
+3. Create .env file based on .env.example
+4. Sign up for a Stripe account
+5. Put Stripe (test) keys into appropriate .env vars
+6. Run `bin/rails sever` to start the server
 
 ## Stripe Testing
 
-Use Credit Card # 4111 1111 1111 1111 for testing success scenarios.
+When checking out, use Credit Card # 4111 1111 1111 1111 for testing success scenarios. The expiration can be any date after today's date. The CVC can be any 3 digit number. 
+
+Example: Credit Card # 4111 1111 1111 1111 Expiration: 05/25 CVC: 399
 
 More information in their docs: <https://stripe.com/docs/testing#cards>
 
@@ -31,3 +43,5 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Rails 4.2 [Rails Guide](http://guides.rubyonrails.org/v4.2/)
 * PostgreSQL 9.x
 * Stripe
+
+
